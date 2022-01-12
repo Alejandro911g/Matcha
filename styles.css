@@ -1,7 +1,9 @@
 body {
     background-color: #fffbf7;
-    margin: 0px;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
+
 h1 {
     color: #025157;
     font-family: 'Alegreya', serif;
@@ -9,51 +11,36 @@ h1 {
     font-size: 60px;
 }
 
-h5 {
+h4 {
     color: #46484c;
+    font-weight: 500;
     font-family: 'Slabo 27px', serif;
-    font-weight: 400;
     font-size: 20px;
     margin-bottom: 30px;
 }
 
-h4 {
+p {
     color: #8b8b8bcc;
-    font-family: 'Open Sans', sans-serif;
 }
 
 button {
     color: #fff;
     background-color: #025157;
-   
-
-}
-
-input, button {
-    height: 100%;
-    border-radius: 8px;
 }
 
 .fixed-header {
     position: fixed;
     top: 0;
-   left: 0;
-   right: 0;
-   background-color: #ffffff;
-
-
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
 }
 
 .header {
-   /* margin: 40px 20px 0;
-   font-size: 0px;
-   height: 80px; */
-   background-color: #fffbf7;
-}
-
-.main {
-    margin-top: 280px;
-    text-align: center;
+    /* margin: 40px 20px 0;
+    font-size: 0;
+    height: 80px; */
+    background-color: #fffbf7;
 }
 
 .header li {
@@ -61,43 +48,47 @@ input, button {
     margin: 0 15px;
 }
 
-/* .header > * {
+.header ul {
+    padding: 0;
+}
+/*
+.header > * {
     display: inline-block;
     font-size: 16px;
     vertical-align: middle;
 } */
-
-/* .header .logo {
+/*
+.header .logo {
     width: 20%;
 } */
 
 .header .navbar {
     width: 60%;
     text-align: center;
-
 }
 
 .header .actions {
     /* width: 20%; */
     text-align: right;
     font-size: 14px;
-
 }
 
 .header .actions button {
     color: #ffffff;
     background-color: #67b54b;
     border: 0;
+    border-radius: 5px;
     padding: 12px 14px;
     margin-left: 10px;
 }
 
-.header ul {
-    padding: 0;
+.main {
+    margin-top: 280px;
+    text-align: center;
 }
 
 .main .imagen-propiedades {
-    width: 60%;
+    width: 80%;
     max-width: 1000px;
 }
 
@@ -118,7 +109,6 @@ input, button {
 .explanatory-video img {
     width: 120px;
     margin-top: 10px;
-    
 }
 
 .publish {
@@ -137,6 +127,10 @@ input, button {
 
 .publish .texto-publish {
     color: #343434;
+}
+
+.publish .texto-gris-publish {
+
 }
 
 .publish .signup-form input {
@@ -167,13 +161,12 @@ input, button {
 
 .features {
     background-color: #025157;
-    height: 660px;
+    height: 820px;
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
     padding: 5% 10%;
     /* gap: 30px; esta propiedad también se puede usar*/
-    /* quitar despues de la clase */
-    margin-bottom: 150px;
+
 }
 
 .feature-card {
@@ -237,12 +230,134 @@ input, button {
 }
 
 
+.card-container {
+    background-color: #a1d683;
+    padding: 10% 0;
+}
+
+.comments {
+    padding: 0 15px;
+}
+
+.comments h1 {
+    color: #025157;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Alegreya", serif;
+    font-weight: 900;
+    font-size: 51px;
+    line-height: 61px;
+    letter-spacing: -2px;
+}
+
+.comments p {
+    font-size: 18px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.comments .btn-beefy {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 12px;
+    text-align: center;
+    color: #fff;
+    background: #025157;
+    border-radius: 8px;
+    height: 45px;
+    width: 166px;
+    transition: all .2s ease-in-out;
+}
+
+.comments .btn-beefy:hover {
+    background-color: #67b54b;
+    color: #fff;
+}
+
+.comments img {
+    margin: 40px 0;
+    padding-right: 10px;
+    width: 50%;
+}
+
+.card-logo-circle {
+    position: absolute;
+    top: 250px;
+    right: 20px;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #f9da73;
+}
+
+.card-logo-circle img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 76%;
+    width: 100%;
+    display: block;
+}
+
+.success-stories .card-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    color: #025157;
+}
+
+.success-stories .customer-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 30px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.success-stories .card-results-wrapper {
+    display: flex;
+}
+
+.success-stories .card-results-wrapper .card-results-icon {
+    flex: 1;
+}
+
+.success-stories .card-results-wrapper .card-results-text {
+    flex: 3;
+}
+
+.customer-cs-btn {
+    background: #025157;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 15px 0;
+}
+
+.card {
+    height: 655px;
+}
+
 @media (max-width: 425px) {
     .navbar,
     .actions {
         display: none;
     }
-    
+
     .main {
         margin-top: 130px;
     }
@@ -258,7 +373,6 @@ input, button {
     .promo {
         flex-direction: column;
         width: 90%;
-        
     }
 
     .explanatory-video > video {
@@ -269,16 +383,16 @@ input, button {
         margin-top: 15px;
     }
 
-    .publish h3 {
+    .publish > h3 {
         font-size: 25px;
         line-height: 1.2;
     }
 
     .publish .signup-form input {
-        max-width: 50%;
+        width: 50%;
     }
 
-    .features { 
+    .features {
         grid-template: repeat(4, 1fr) / 1fr;
         padding-left: 0;
         padding-right: 0;
@@ -288,14 +402,4 @@ input, button {
     .feature-image {
         display: none;
     }
-
-
 }
-@media (min-width: 426px) and (max-width: 768px) {
-
-}
-
-
-
-
-
