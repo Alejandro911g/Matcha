@@ -1,0 +1,26 @@
+@use 'global' as *;
+
+.blog {
+    position: relative;
+
+
+    h5 {
+        font-size: 25px;
+        color: $gray;
+    }
+
+    .metadata {
+        font-size: 14px;
+
+        .category {
+            color: $light-green;
+        }
+
+    }
+
+    .card-text {
+        color: $gray;
+        font-size: 18px;
+        line-height: 1.5em;
+    }
+}
