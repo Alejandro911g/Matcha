@@ -1,12 +1,10 @@
 @use 'global' as *;
 @use 'tarjetas' as *;
 
-
 .blog {
-    background-color:$white;
+    background-color: $white;
     max-width: unset;
-    height: 150px;
-
+    padding: 5% 10%;
 
     .title {
         @extend %base-title;
@@ -14,7 +12,6 @@
 
     .process-list {
         margin: 40px 0 36px;
-        
 
         .process {
             margin-bottom: 25px;
@@ -23,14 +20,14 @@
 
             & > div {
                 & > h3 {
-                    color: $dargk-green-title;
+                    color: $dark-green-title;
                     margin-bottom: 0;
                     font-size: 30px;
                     font-weight: 500;
                 }
 
                 & > p {
-                    color: $dargk-green-text;
+                    color: $dark-green-text;
                     margin: 0;
                 }
             }
@@ -44,18 +41,25 @@
                 img {
                     height: 100%;
                 }
-
             }
-    
         }
     }
+
     button {
-        position: absolute;
         height: auto;
         border: none;
         border-radius: 8px;
         padding: 12px;
         width: 180px;
         margin-bottom: 15px;
-      }
+        color: #fff;
+        background-color: #025157;
+        transition: background-color 0.3s;
+        transition-timing-function: ease-in;
+
+        &:hover {
+            background-color: $light-green;
+        }
+
+    }
 }

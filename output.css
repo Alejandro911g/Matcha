@@ -1,14 +1,11 @@
 .blog .title {
-  font-family: "alegreya, serif";
+  font-family: "Alegreya", serif;
   color: #135359;
   font-weight: 700;
 }
 
-.blog {
-  position: relative;
-}
 .blog h5 {
-  font-size: 25px;
+  font-size: 24px;
   color: #4a4a4a;
 }
 .blog .metadata {
@@ -20,13 +17,32 @@
 .blog .card-text {
   color: #4a4a4a;
   font-size: 18px;
-  line-height: 1.5em;
+  line-height: 1.2em;
+}
+.blog .card-text .read-more {
+  text-decoration: underline;
+}
+.blog .author {
+  display: flex;
+  align-items: center;
+}
+.blog .author > img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.blog .author p {
+  margin-left: 8px;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4a4a4a;
 }
 
 .blog {
   background-color: #ffffff;
   max-width: unset;
-  height: 150px;
+  padding: 5% 10%;
 }
 .blog .process-list {
   margin: 40px 0 36px;
@@ -56,13 +72,19 @@
   height: 100%;
 }
 .blog button {
-  position: absolute;
   height: auto;
   border: none;
   border-radius: 8px;
   padding: 12px;
   width: 180px;
   margin-bottom: 15px;
+  color: #fff;
+  background-color: #025157;
+  transition: background-color 0.3s;
+  transition-timing-function: ease-in;
+}
+.blog button:hover {
+  background-color: #67b54b;
 }
 
 /*# sourceMappingURL=output.css.map */
